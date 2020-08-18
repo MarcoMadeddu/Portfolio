@@ -1,55 +1,22 @@
 .works{
+    height: 600px;
     width: 100%;
-    height: 800px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
-    .work-card{
-        margin: auto 40px;
-        height:400px;
-        width: 800px;
-        border: 1px solid green;
-        background-color: blue;
-    }
-    .fas{
-        font-size: 50px;
-    }
-    .one{
-        background-color: red;
-    }
-
-    .swiper-container {
-        width: 50%;
-        height: 600px;
-      }
-  
-      .swiper-slide {
+    .work-list{
+        width: 80%;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
-        .slider-video{
-            margin-top:50px;
-            width:100%;
-            height:75%;
-            video{
-                width:100%;
-                height:100%;
-            }
-            
+        justify-content: center;
+        .work{
+            width: calc(80% / 3 );
+            height: 270px;
+            border: 1px solid red;
+            margin: 30px;
         }
-        .slider-info{
-            width:100%;
-            height:30%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            h2{
-                margin: 20px auto;
-            }
-        }
-      }
-
-      
+    }
+   
 }

@@ -15167,79 +15167,45 @@ a.text-dark:focus {
 
 .site {
   width: 100%;
-  height: 1500px;
-  border: 1px solid black;
+  height: auto;
+  background-color: #e9eff0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .works {
-  width: 100%;
-  height: 800px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
-}
-
-.works .work-card {
-  margin: auto 40px;
-  height: 400px;
-  width: 800px;
-  border: 1px solid green;
-  background-color: blue;
-}
-
-.works .fas {
-  font-size: 50px;
-}
-
-.works .one {
-  background-color: red;
-}
-
-.works .swiper-container {
-  width: 50%;
   height: 600px;
-}
-
-.works .swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.works .swiper-slide .slider-video {
-  margin-top: 50px;
   width: 100%;
-  height: 75%;
-}
-
-.works .swiper-slide .slider-video video {
-  width: 100%;
-  height: 100%;
-}
-
-.works .swiper-slide .slider-info {
-  width: 100%;
-  height: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.works .swiper-slide .slider-info h2 {
-  margin: 20px auto;
+.works .work-list {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.works .work-list .work {
+  width: calc(80% / 3 );
+  height: 270px;
+  border: 1px solid red;
+  margin: 30px;
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  width: 85%;
-  height: 300px;
-  border: 1px solid red;
+  width: 100%;
+  height: 900px;
+  background-image: url(/images/back.jpg?9f5a81c1fbf77c1ffabb56bc17c88fbb);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header .top-header {
@@ -15248,14 +15214,10 @@ a.text-dark:focus {
   justify-content: center;
   width: 100%;
   height: 50%;
-  border: 1px solid blue;
 }
 
-.header .top-header .header-img {
-  width: 150px;
-  height: 150px;
-  border: 1px solid black;
-  border-radius: 50%;
+.header .top-header img {
+  width: 300px;
 }
 
 .header .bottom-header {
@@ -15264,18 +15226,15 @@ a.text-dark:focus {
   justify-content: center;
   width: 100%;
   height: 50%;
-  border: 1px solid green;
 }
 
 .header .bottom-header .header-link {
   width: 50%;
-  border: 1px solid red;
 }
 
 .main {
   width: 100%;
   height: 1000px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15284,7 +15243,6 @@ a.text-dark:focus {
 .main .skills {
   width: 100%;
   height: 250px;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
