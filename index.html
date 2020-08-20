@@ -6,39 +6,91 @@
     <title>Portfolio</title>
     <!-- M A I N  C S S -->
     <link rel="stylesheet" href="dist/app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+    <!-- F O N T  A W E S O M E -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- F O N T -->
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
     <div class="site">
         <div class="header">
-            <div class="top-header">
-                <img src="multi/profile.jpeg" alt="" class ="animate__animated animate__flipInY">
-            </div>
-            <div class="bottom-header">
-                <div class="header-link">
-
+            <div class="header-img">
+                <img src="multi/profile.jpeg" alt="" class ="animate__animated animate__flipInY img">
+                <div class="logo animate__animated off">
+                    <h1>Marco Madeddu Web Dev</h1>
                 </div>
             </div>
+            <div class="header-link">
+                <a class = "link animate__animated animate__fadeInUpBig" href="#skills"> <i class="fas fa-cogs"></i> <br>SKILLS</a>
+                <a class = "link animate__animated animate__fadeInUpBig"href="#works"> <i class="fas fa-tasks"></i> <br>MY WORKS</a>
+                <a class = "link animate__animated animate__fadeInUpBig"href="#"> <i class="fas fa-user-alt"></i> <br>ABOUT</a>
+                <a class = "link animate__animated animate__fadeInUpBig"href="#"> <i class="fas fa-phone-alt"></i> <br>CONTACT ME</a>
+            </div>
+            
         </div>
 
         <div class="main mt-5">
-            <div class="skills mt-5">
-                <h2 class="animate__animated animate__bounce">Skills</h2>
-                <div class="skills-container mt-5">
-                    <div class="a animate__animated animate__backInLeft"></div>
-                    <div class="a animate__animated animate__backInLeft"></div>
-                    <div class="a animate__animated animate__backInLeft"></div>
-                    <div class="a animate__animated animate__backInLeft"></div>
-                    <div class="a animate__animated animate__backInLeft"></div>
-                    <div class="a animate__animated animate__backInLeft"></div>
-                    <div class="a animate__animated animate__backInLeft"></div>
+            <div class="skills mt-5" id="skills">
+                <h2 class="title animate__animated animate__bounce">Skills</h2>
+                <div class="skill-banner">
+                    <div class="skill-icon-left animate__animated animate__lightSpeedInLeft animate__delay-1s"></div>
+                    <i class="skill-icon fas fa-cogs animate__animated animate__rotateIn animate__delay-2s"></i>
+                    <div class="skill-icon-right animate__animated animate__lightSpeedInRight animate__delay-1s"></div>
                 </div>
+                <div class="skills-container">
+                    <a href="https://github.com/MarcoMadeddu?tab=repositories&q=html&type=&language=" class="a animate__animated animate__backInLeft">
+                        <img src="https://www.boolean.careers/images/languages/html.png" alt="html">
+                        <div class="skill-text animate__animated animate__bounceIn animate__delay-1s">
+                            <h3>HTML</h3>
+                        </div>
+                        
+                    </a>
+                    <a href="https://github.com/MarcoMadeddu?tab=repositories&q=php&type=&language=" class="a animate__animated animate__backInLeft">
+                        <img src="multi/php.png">
+                        <div class="skill-text animate__animated animate__bounceIn animate__delay-1s">
+                            <h3>php</h3>
+                        </div>
+                    </a>
+                    <a href="https://github.com/MarcoMadeddu?tab=repositories&q=php&type=&language=" class="a animate__animated animate__backInLeft">
+                        <img src="https://www.boolean.careers/images/languages/mysql.png" alt="html">
+                        <div class="skill-text animate__animated animate__bounceIn animate__delay-1s">
+                            <h3><br>MySql</h3>
+                        </div>
+
+                    </a>
+                      
+                    <a href="https://github.com/MarcoMadeddu?tab=repositories&q=js&type=&language=" class="a animate__animated animate__backInLeft">
+                        <img src="https://www.boolean.careers/images/languages/js.png" alt="html">
+                        <div class="skill-text animate__animated animate__bounceIn animate__delay-1s">
+                            <h3>JavaScript</h3>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/MarcoMadeddu?tab=repositories&q=laravel&type=&language=" class="a animate__animated animate__backInLeft">
+                        <img src="https://www.boolean.careers/images/languages/laravel.png" alt="html">
+                        <div class="skill-text animate__animated animate__bounceIn animate__delay-1s">
+                            <h3>Laravel</h3>
+                        </div>
+                    </a>
+                    <div class="a animate__animated animate__backInLeft">
+                        <img src="https://www.boolean.careers/images/languages/vuejs.png" alt="html">
+                        <div class="skill-text animate__animated animate__bounceIn animate__delay-1s">
+                            <h3>VueJs</h3>
+                        </div>
+                    </div>
+                </div>
+                <h4 class ="adv animate__animated animate__backInUp animate__delay-3s">Click on Them to see related codes</h4>
             </div>
 
-            <div class = "works mt-5">
+            <div class = "works mt-5" id="works">
                 <h2>My Works</h2>
+                <div class="skill-banner">
+                    <div class="skill-icon-left animate__animated animate__lightSpeedInLeft animate__delay-1s"></div>
+                    <i class="skill-icon fas fa-tasks animate__animated animate__rotateIn animate__delay-2s"></i>
+                    <div class="skill-icon-right animate__animated animate__lightSpeedInRight animate__delay-1s"></div>
+                </div>
                 <div class="work-list">
                     <div class="work">
                         

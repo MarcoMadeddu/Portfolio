@@ -6,21 +6,108 @@
     align-items: center;
     .skills{
         width: 100%;
-        height: 250px;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        h2{
+            font-size: 40px;
+        }
+        .skill-banner{
+            width: 100%;
+            height: 20px;
+            display: flex;
+            align-items:center;
+            justify-content:center;
+            i{
+                font-size: 35px;
+                margin: 10px 20px;
+            }
+            .skill-icon-left,
+            .skill-icon-right{
+                flex-basis: 20%;
+                height:1.5px;
+                background-color: black;
+            }
+        }
         .skills-container{
             width: 100%;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
             .a{
-                width: 100px;
-                height: 100px;
-                border: 1px solid black;
-                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                width: 150px;
+                height: 150px;
+                margin: 20px auto;
+                transition: transform 0.4s;
+                &:hover {
+                    transform: scale(1.1);
+                    text-decoration: none;
+                    color: black;
+                }
+                img{
+                    max-width: 100px;
+                }
             }
+            .skill-star{
+                height: 30px;
+                width: 100%;
+                border: 1px solid black;
+            }
+        }
+        h4{
+            color:#7d7b7b;
+            text-align: center;
+            margin-top: 20px;
+            width: 80%;
         }
        
     }
 }
+@media (max-width: 575.98px) {  }
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 767.0px) {
+    
+    .main{
+        .skills{
+            .skills-container{
+                margin-bottom: 50px;
+                .a{
+                    width: 200px;
+                }
+            }
+           
+        }
+    }
+  }
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 991.98px) { 
+    .main{
+        .skills{
+            flex-wrap: nowrap;
+            .skills-container{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 100px;
+                .a{
+                    width: 100px;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+            }
+           
+        }
+    }
+ }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {  }
