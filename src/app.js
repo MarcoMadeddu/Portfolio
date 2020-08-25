@@ -31,6 +31,8 @@ $( document ).ready(function() {
     if(!links.hasClass('animate__fadeInUpBig')){
       links.toggleClass('animate__fadeInUpBig', $(this).scrollTop() > 300);
     }
+    $(".navbar").toggleClass('off', $(this).scrollTop()<680);
+    $(".navbar").toggleClass('animate__animated animate__fadeInDown', $(this).scrollTop()>680);
     //scroll on skill section
     $(".a").toggleClass('animate__backInLeft', $(this).scrollTop() > 250);
     $(".title").toggleClass('animate__bounce', $(this).scrollTop() > 250);
@@ -41,13 +43,25 @@ $( document ).ready(function() {
     $(".adv").toggleClass('animate__backInUp', $(this).scrollTop() > 250);
 
     //scroll on Work section
-    $("#ban1").toggleClass('animate__rotateIn', $(this).scrollTop() > 250);
-    $("#ban2").toggleClass('animate__lightSpeedInLeft', $(this).scrollTop() > 250);
-    $("#ban3").toggleClass('animate__lightSpeedInRight', $(this).scrollTop() > 250);
+    $(".work-icon").toggleClass('animate__rotateIn', $(this).scrollTop() > 650);
+    $(".work-icon-left").toggleClass('animate__lightSpeedInLeft', $(this).scrollTop() > 650);
+    $(".work-icon-right").toggleClass('animate__lightSpeedInRight', $(this).scrollTop() > 650);
+  })
+
+
+  //work section
+
+  var work =$(".work");
+
+  work.click(function (){
+    console.log($(this).children(".site"));
+    // work.toggleClass('animate__animated animate__bounceOut');
+    $(this).toggleClass('animate__animated animate__bounceIn');
+    $(this).children("img").toggleClass('off');
   })
 
   //interval to change logo
-  setInterval(changeLogo, 5000);
+  setInterval(changeLogo, 3500);
   function changeLogo(){
     profile.toggleClass('animate__flipOutY');
     profile.toggleClass('off');
