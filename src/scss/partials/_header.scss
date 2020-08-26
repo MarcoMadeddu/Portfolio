@@ -1,7 +1,7 @@
 .navbar{
     display: none;
     width: 100%;
-    height: 100px;
+    height: 50px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -12,7 +12,7 @@
     background-image: url("../../../multi/navbar1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -90px;
+    background-position-y: -120px;
     .navbar-link{
         .cl{
             display: none;
@@ -26,19 +26,19 @@
             text-decoration: none;
             color: black;
             font-size: 20px;
-            flex-basis: 50%;
-            margin: auto 20px;
+            flex-basis: 30%;
+            margin: auto 25px;
             i{
                 font-size:35px;
             }
+        }
+        .grey{
+            color: #eaf0f3;
         }
     }
 }
 .off{
     display: none;
-}
-.op1{
-    opacity: 0;
 }
 
 .header{
@@ -87,9 +87,13 @@
             font-size: 30px;
             margin-top: 20px;
         }
+        h2{
+            font-size: 25px;
+        }
     }
     .logo{
         display: flex;
+        flex-direction: column;
         align-items: center;
         h1{
             text-align: center;
@@ -121,14 +125,22 @@
 @media (min-width: 991.98px) { 
 .navbar{
     background-position-y: -860px;
+    height: 50px;
     .navbar-link{
         .cl{
             display: block;
         }
+        a{
+            font-size: 13px;
+            flex-basis: 14%;
+            i{
+                font-size: 25px;
+            }
+        }
+        }
         .mb{
             display: none;
         }
-    }
 }
 .header{
     background-size: cover;
@@ -138,11 +150,11 @@
         width: 400px;
     }
     .header-img{
-        margin: 100px auto;
+        margin: 170px auto 80px auto;
         .logo{
             width: 400px;
             height: 266px;
-            padding-top: 150px;
+            padding-top: 90px;
             h1{
                 font-size: 50px;
                 margin: 20px auto 50px auto;

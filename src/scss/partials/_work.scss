@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 70px;
     background: linear-gradient(180deg, rgba(233,239,240,1) 30%, rgba(62,62,62,1) 100%);
     .work-list{
         position: relative;
@@ -19,22 +19,36 @@
             width: calc( 100% / 2 );
             height: 200px;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             img{
-                width: 150px;
+                width: 100px;
             }
             .site{
                 position: absolute;
                 top: 0%;
                 width: 200%;
             }
-            .dx1{
+            .dx1,
+            .sx1,
+            .ct2{
                 left: 0%;
             }
             .ct1{
                 right: 0%;
+            }
+            .work-img,
+            .work-link{
+                width: 100%;
+                height:50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .work-link{
+                align-items: flex-start;
             }
         }
     }
@@ -71,12 +85,19 @@
                 .site{
                     width: 250%;
                 }
+                .sx1{
+                    left: 31%;
+                }
                 .dx1{
                     left: -180%;
                 }
                 .ct1{
                     right: 0;
                     left: -75%;
+                }
+                .ct2{
+                    left: -306px;
+                    top: -285px;
                 }
             }
         }

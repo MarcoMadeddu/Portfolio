@@ -18759,7 +18759,7 @@ $(document).ready(function () {
     console.log($(this).children(".site")); // work.toggleClass('animate__animated animate__bounceOut');
 
     $(this).toggleClass('animate__animated animate__bounceIn');
-    $(this).children("img").toggleClass('off');
+    $(this).children(".work-img").children("img").toggleClass('off');
   }); //interval to change logo
 
   setInterval(changeLogo, 3500);
