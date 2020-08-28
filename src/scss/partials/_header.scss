@@ -74,6 +74,12 @@
                 font-size:35px;
             }
         }
+        .off{
+            display: none;
+        }
+        .op0{
+            opacity: 0;
+        }
     }
     .header-img{
         height: 50%;
@@ -101,7 +107,7 @@
         }
     }
     .off{
-        display: none !important;
+        display: none;
     }
     .on{
         opacity: 1;

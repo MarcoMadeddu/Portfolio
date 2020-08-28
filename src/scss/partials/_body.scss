@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .site{
@@ -24,7 +25,8 @@ a{
 }
 
 .skill-banner,
-.work-banner{
+.work-banner,
+.contact-banner{
     width: 100%;
     height: 20px;
     display: flex;
@@ -37,7 +39,9 @@ a{
     .skill-icon-left,
     .skill-icon-right,
     .work-icon-left,
-    .work-icon-right{
+    .work-icon-right,
+    .contact-icon-left,
+    .contact-icon-right{
         flex-basis: 20%;
         height:1.5px;
         background-color: black;

@@ -1,0 +1,57 @@
+.contact{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(0deg, #e9eff0 50%, #93b2ba 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        margin-top: 140px;
+    }
+    .contacts{
+        height: 200px;
+        width: 80%;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        a{
+            flex-basis: (100%/2);
+            text-align: center;
+            margin: 10px auto;
+            i{
+                font-size:100px;
+                // margin: auto 100px;
+                color: #769096;
+                &:last-child{
+                    margin-bottom: 7px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575.98px) {  }
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 767.0px) {
+    
+ 
+  }
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 991.98px) { 
+    .contact{
+        .contacts{
+            flex-wrap: nowrap;
+            a{
+                flex-basis: calc(100% / 4);
+                margin: none;
+            }
+        }
+    }
+
+ }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {  }

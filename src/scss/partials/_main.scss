@@ -11,9 +11,6 @@
         flex-direction: column;
         align-items: center;
         margin-top: 70px;
-        h2{
-            font-size: 40px;
-        }
         .skill-banner{
             width: 100%;
             height: 20px;
@@ -38,6 +35,7 @@
             flex-wrap: wrap;
             margin-top: 30px;
             .a{
+                
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -53,6 +51,9 @@
                 }
                 img{
                     max-width: 100px;
+                }
+                h3{
+                    font-size: 20px;
                 }
             }
         }
@@ -87,6 +88,7 @@
     .main{
         .skills{
             flex-wrap: nowrap;
+            margin-top: 140px;
             .skills-container{
                 width: 100%;
                 display: flex;

@@ -18747,19 +18747,28 @@ $(document).ready(function () {
     $(".skill-icon-left").toggleClass('animate__lightSpeedInLeft', $(this).scrollTop() > 250);
     $(".skill-icon-right").toggleClass('animate__lightSpeedInRight', $(this).scrollTop() > 250);
     $(".skill-text").toggleClass('animate__bounceIn', $(this).scrollTop() > 250);
-    $(".adv").toggleClass('animate__backInUp', $(this).scrollTop() > 250); //scroll on Work section
+    $(".adv").toggleClass('animate__fadeIn', $(this).scrollTop() > 250); //scroll on Work section
 
-    $(".work-icon").toggleClass('animate__rotateIn', $(this).scrollTop() > 650);
-    $(".work-icon-left").toggleClass('animate__lightSpeedInLeft', $(this).scrollTop() > 650);
-    $(".work-icon-right").toggleClass('animate__lightSpeedInRight', $(this).scrollTop() > 650);
+    $(".work-icon").toggleClass('animate__rotateIn', $(this).scrollTop() > 1000);
+    $(".work-icon-left").toggleClass('animate__lightSpeedInLeft', $(this).scrollTop() > 1000);
+    $(".work-icon-right").toggleClass('animate__lightSpeedInRight', $(this).scrollTop() > 1000); // $(".work-list").toggleClass('animate__backInRight', $(this).scrollTop() > 650);
+    //scroll on Contact section
+
+    $(".contact-icon").toggleClass('animate__rotateIn', $(this).scrollTop() > 2000);
+    $(".contact-icon-left").toggleClass('animate__lightSpeedInLeft', $(this).scrollTop() > 2000);
+    $(".contact-icon-right").toggleClass('animate__lightSpeedInRight', $(this).scrollTop() > 2000);
+    $(".contacts").children("a").toggleClass('animate__heartBeat', $(this).scrollTop() > 2000);
   }); //work section
 
   var work = $(".work");
+  var languages = $(".languages");
+  console.log(languages);
   work.click(function () {
     console.log($(this).children(".site")); // work.toggleClass('animate__animated animate__bounceOut');
 
     $(this).toggleClass('animate__animated animate__bounceIn');
     $(this).children(".work-img").children("img").toggleClass('off');
+    languages.toggleClass('animate__fadeOut');
   }); //interval to change logo
 
   setInterval(changeLogo, 3500);
