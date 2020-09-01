@@ -8,7 +8,6 @@
         margin-top: 140px;
     }
     .contacts{
-        height: 200px;
         width: 80%;
         margin-top: 20px;
         display: flex;
@@ -51,10 +50,9 @@
         .about-container{
             width: 80%;
             height: 200px;
-            border: 1px solid black;
             margin-top: 50px;
             p{
-                font-size: 25px;
+                font-size: 21px;
                 text-align: center;
             }
         }
@@ -78,6 +76,14 @@
                 margin: none;
                 i{
                     font-size:100px;
+                }
+            }
+        }
+        .about{
+            .about-container{
+                p{
+                    font-size: 25px;
+                    margin: 50px auto;
                 }
             }
         }

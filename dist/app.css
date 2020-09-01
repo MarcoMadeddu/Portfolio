@@ -15797,7 +15797,6 @@ a {
 }
 
 .contact .contacts {
-  height: 200px;
   width: 80%;
   margin-top: 20px;
   display: flex;
@@ -15847,12 +15846,11 @@ a {
 .contact .about .about-container {
   width: 80%;
   height: 200px;
-  border: 1px solid black;
   margin-top: 50px;
 }
 
 .contact .about .about-container p {
-  font-size: 25px;
+  font-size: 21px;
   text-align: center;
 }
 
@@ -15868,6 +15866,11 @@ a {
 
   .contact .contacts a i {
     font-size: 100px;
+  }
+
+  .contact .about .about-container p {
+    font-size: 25px;
+    margin: 50px auto;
   }
 }
 

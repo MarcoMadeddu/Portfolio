@@ -53,6 +53,7 @@ $( document ).ready(function() {
      $(".contact-icon-left").toggleClass('animate__lightSpeedInLeft', $(this).scrollTop() > 2000);
      $(".contact-icon-right").toggleClass('animate__lightSpeedInRight', $(this).scrollTop() > 2000);
      $(".contacts").children("a").toggleClass('animate__heartBeat', $(this).scrollTop() > 2000);
+     $(".about-container").children("p").toggleClass('animate__slideInLeft', $(this).scrollTop() > 2000);
   })
 
 
