@@ -25,6 +25,7 @@ a{
 }
 
 .skill-banner,
+.about-banner,
 .work-banner,
 .contact-banner{
     width: 100%;
@@ -40,6 +41,8 @@ a{
     .skill-icon-right,
     .work-icon-left,
     .work-icon-right,
+    .about-icon-left,
+    .about-icon-right,
     .contact-icon-left,
     .contact-icon-right{
         flex-basis: 20%;

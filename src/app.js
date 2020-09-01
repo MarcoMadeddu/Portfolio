@@ -59,15 +59,16 @@ $( document ).ready(function() {
   //work section
 
   var work =$(".work");
-  var languages=$(".languages");
+  var languages=$(".work-link");
   console.log(languages);
   
   work.click(function (){
-    console.log($(this).children(".site"));
+    // $(".work-img").children(".site").addClass('off')
+    console.log("click");
     // work.toggleClass('animate__animated animate__bounceOut');
+    languages.toggleClass('animate__fadeOut');
     $(this).toggleClass('animate__animated animate__bounceIn');
     $(this).children(".work-img").children("img").toggleClass('off');
-    languages.toggleClass('animate__fadeOut');
   })
 
   //interval to change logo

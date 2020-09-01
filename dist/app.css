@@ -15186,6 +15186,7 @@ a {
 }
 
 .skill-banner,
+.about-banner,
 .work-banner,
 .contact-banner {
   width: 100%;
@@ -15196,6 +15197,7 @@ a {
 }
 
 .skill-banner i,
+.about-banner i,
 .work-banner i,
 .contact-banner i {
   font-size: 35px;
@@ -15206,18 +15208,32 @@ a {
 .skill-banner .skill-icon-right,
 .skill-banner .work-icon-left,
 .skill-banner .work-icon-right,
+.skill-banner .about-icon-left,
+.skill-banner .about-icon-right,
 .skill-banner .contact-icon-left,
 .skill-banner .contact-icon-right,
+.about-banner .skill-icon-left,
+.about-banner .skill-icon-right,
+.about-banner .work-icon-left,
+.about-banner .work-icon-right,
+.about-banner .about-icon-left,
+.about-banner .about-icon-right,
+.about-banner .contact-icon-left,
+.about-banner .contact-icon-right,
 .work-banner .skill-icon-left,
 .work-banner .skill-icon-right,
 .work-banner .work-icon-left,
 .work-banner .work-icon-right,
+.work-banner .about-icon-left,
+.work-banner .about-icon-right,
 .work-banner .contact-icon-left,
 .work-banner .contact-icon-right,
 .contact-banner .skill-icon-left,
 .contact-banner .skill-icon-right,
 .contact-banner .work-icon-left,
 .contact-banner .work-icon-right,
+.contact-banner .about-icon-left,
+.contact-banner .about-icon-right,
 .contact-banner .contact-icon-left,
 .contact-banner .contact-icon-right {
   flex-basis: 20%;
@@ -15299,17 +15315,28 @@ a {
   flex-direction: column;
   align-items: flex-start;
   align-items: center;
+  display: none;
 }
 
 .works .work-list .work .work-link a {
   margin-bottom: 25px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.works .work-list .work .work-link a .fa-github {
+  font-size: 30px;
+}
+
+.works .work-list .work .work-link a .fa-arrow-right {
+  margin: 0 10px 0 0;
 }
 
 .works .work-list .work .work-link .languages {
   display: flex;
   align-items: center;
   justify-content: center;
-  display: none;
 }
 
 .works .work-list .work .work-link .languages i {
@@ -15336,6 +15363,18 @@ a {
 
 .works .work-list .work .work-link .languages .fa-sass {
   color: #cd6699;
+}
+
+.works .adv {
+  display: none;
+}
+
+.works .adv2 {
+  color: #e9eeef;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 21px;
 }
 
 @media (min-width: 767.98px) {
@@ -15407,6 +15446,10 @@ a {
     top: -285px;
   }
 
+  .works .work-list .work .work-link {
+    display: flex;
+  }
+
   .works .work-list .work .work-link .languages {
     display: flex;
     align-items: center;
@@ -15417,6 +15460,16 @@ a {
     font-weight: 400;
     font-size: 40px;
     margin: auto 10px;
+  }
+
+  .works .adv {
+    display: block;
+    color: #e9eeef;
+    margin-top: 10px;
+  }
+
+  .works .adv2 {
+    display: none;
   }
 }
 
@@ -15475,7 +15528,7 @@ a {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 810px;
+  height: 815px;
   background-image: url(/images/navbar1.jpg?533d8a274aaedeb2c17282ceba07c398);
   background-repeat: no-repeat;
   background-size: cover;
@@ -15647,26 +15700,6 @@ a {
   margin-top: 70px;
 }
 
-.main .skills .skill-banner {
-  width: 100%;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.main .skills .skill-banner i {
-  font-size: 35px;
-  margin: 10px 20px;
-}
-
-.main .skills .skill-banner .skill-icon-left,
-.main .skills .skill-banner .skill-icon-right {
-  flex-basis: 20%;
-  height: 1.5px;
-  background-color: black;
-}
-
 .main .skills .skills-container {
   width: 100%;
   display: flex;
@@ -15740,7 +15773,6 @@ a {
 
 .contact {
   width: 100%;
-  height: 500px;
   background: linear-gradient(0deg, #e9eff0 50%, #93b2ba 100%);
   display: flex;
   flex-direction: column;
@@ -15768,12 +15800,47 @@ a {
 }
 
 .contact .contacts a i {
-  font-size: 100px;
+  font-size: 70px;
   color: #769096;
 }
 
-.contact .contacts a i:last-child {
-  margin-bottom: 7px;
+.contact .contacts a:last-child i {
+  margin-bottom: 5px;
+}
+
+.contact .contacts .fa-github-square {
+  color: black;
+}
+
+.contact .contacts .fa-linkedin {
+  color: #0e76a8;
+}
+
+.contact .contacts .fa-envelope-square {
+  color: #d54638;
+}
+
+.contact .contacts .fa-file-download {
+  color: #e8aa5a;
+}
+
+.contact .about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .about .about-container {
+  width: 80%;
+  height: 200px;
+  border: 1px solid black;
+  margin-top: 50px;
+}
+
+.contact .about .about-container p {
+  font-size: 25px;
+  text-align: center;
 }
 
 @media (min-width: 991.98px) {
@@ -15784,6 +15851,10 @@ a {
   .contact .contacts a {
     flex-basis: calc(100% / 4);
     margin: none;
+  }
+
+  .contact .contacts a i {
+    font-size: 100px;
   }
 }
 
