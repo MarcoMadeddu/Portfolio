@@ -15242,6 +15242,18 @@ a {
   background-color: black;
 }
 
+@media (min-width: 992px) {
+  * {
+    zoom: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  * {
+    zoom: 100%;
+  }
+}
+
 .works {
   height: auto;
   width: 100%;
