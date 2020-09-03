@@ -27,10 +27,6 @@ $( document ).ready(function() {
   //scroll to effect
   $(window).scroll(function(){
     //scroll on header
-    links.toggleClass('animate__fadeOutUpBig', $(this).scrollTop() > 300);
-    if(!links.hasClass('animate__fadeInUpBig')){
-      links.toggleClass('animate__fadeInUpBig', $(this).scrollTop() > 300);
-    }
     $(".navbar").toggleClass('off', $(this).scrollTop()<680);
     $(".navbar").toggleClass('animate__animated animate__fadeInDown', $(this).scrollTop()>680);
     //scroll on skill section
